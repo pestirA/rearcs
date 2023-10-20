@@ -1,0 +1,21 @@
+# Install Cert-Manager
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cert-manager
+
+# Create ClusterIssuer for Let's Encrypt
+  apiVersion: cert-manager.io/v1alpha3
+  kind: ClusterIssuer
+  metadata:
+    name: letsencrypt
+spec:
+  acme:
+    email: abishaiep@gmail.com
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      name: letsencrypt-private-key
+    solvers:
+      - http01:
+          ingress:
+            class: nginx

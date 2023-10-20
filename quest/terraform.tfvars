@@ -1,0 +1,7 @@
+project    = "humble-being-293400"
+region     = "us-central1"
+location   = "us-central1"
+PROJECT_ID = "humble-being-293400"
+IMAGE_NAME = "abishaiep/quests"
+image      = "us-central1-docker.pkg.dev/humble-being-293400/artifacts/abishaiep/quests" //"gcr.io/humble-being-293400/quests"
+name       = "my-rearcs-cluster"

@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  quest-example:
+    image:  abishaiep/quests
+    environment:
+    - SECRET_WORD=TwelveFactor #YOUR_ENV_VAR_NAME

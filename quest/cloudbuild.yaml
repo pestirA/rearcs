@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  script: |
+    docker build -t us-central1-docker.pkg.dev/humble-being-293400/artifacts/abishaiep/quests:version1.0 .
+  #automapSubstitutions: true
+images:
+- 'us-central1-docker.pkg.dev/humble-being-293400/artifacts/abishaiep/quests:version1.0'
